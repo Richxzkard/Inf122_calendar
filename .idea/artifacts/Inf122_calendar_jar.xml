@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Inf122_calendar:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Inf122_calendar_jar</output-path>
+    <root id="archive" name="Inf122_calendar.jar">
+      <element id="module-output" name="Inf122_calendar" />
+    </root>
+  </artifact>
+</component>
