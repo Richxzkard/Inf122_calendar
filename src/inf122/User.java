@@ -3,7 +3,7 @@ package inf122;
 import java.util.ArrayList;
 
 public class User {
-    private String user_id;
+    private final String user_id;
 
     public User (String user_id){
         this.user_id = user_id;

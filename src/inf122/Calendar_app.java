@@ -14,7 +14,14 @@ public class Calendar_app {
     private ArrayList<User> user_list;
     private ArrayList<Calendar> calendar_list;
 
-    public Calendar_app() {
+    private static Calendar_app app = new Calendar_app();
+
+    public static Calendar_app get_app(){
+        return app;
+    }
+
+
+    private Calendar_app() {
         this.Usercalendar = new HashMap<>();
         this.user_list = new ArrayList<>();
         this.calendar_list = new ArrayList<>();

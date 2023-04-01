@@ -32,11 +32,7 @@ public class Calendar {
         return res;
     }
 
-    public void add_event(String name, String location, String description, Integer start_year, Integer start_month,
-                          Integer start_day, Integer start_hour, Integer start_minute, Integer end_year, Integer end_month,
-                          Integer end_day, Integer end_hour, Integer end_minute){
-        Date start = new Date(start_year, start_month, start_day, start_hour, start_minute);
-        Date end = new Date(end_year, end_month, end_day, end_hour, end_minute);
+    public void add_event(String name, String location, String description, Date start, Date end){
 
         Event new_event = new Event(name, location, description, start, end);
         this.event_list.add(new_event);
@@ -92,7 +88,7 @@ public class Calendar {
     }
 
     public String get_event_info(){
-        StringBuffer sb = new StringBuffer();
+        StringBuilder sb = new StringBuilder();
         for (Event e: event_list){
             sb.append(e.getEvent_name());
             sb.append(" ");
